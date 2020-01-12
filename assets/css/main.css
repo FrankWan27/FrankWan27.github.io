@@ -1,6 +1,16 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+.static {
+    position: absolute;
+    background: white;
+}
+
+
+article:hover .static {
+    opacity:0
+}
+
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -153,6 +163,7 @@ input, select, textarea {
 			border-bottom-color: transparent;
 			color: #f2849e !important;
 		}
+
 
 	strong, b {
 		font-weight: 900;
