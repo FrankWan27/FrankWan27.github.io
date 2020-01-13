@@ -15,13 +15,13 @@
     <script src="turret.js"></script>
     <script src="bullet.js"></script>
     <script src="bump.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
     <style type = "text/css">
         canvas{
             margin:auto;
             display:block;
-        }
-        p{text-align: center}
- 
+        } 
     </style>
 </head>
 <body>
@@ -276,7 +276,7 @@
                 }
                 for(let i in rotatableSprites)
                 {
-                    //checks if rotatable is in radius of bubble
+                    //checks if rotatable is in radius of bubbled
                     if(Math.sqrt(Math.pow(rotatableSprites[i].x - bubble.x, 2) + Math.pow(rotatableSprites[i].y - bubble.y, 2)) <= bubble.width / 2)
                     {
                         let angleRadians = 0.1;
@@ -296,6 +296,6 @@
             }
         }
     </script>
-    <p>View the source code on <a href="https://github.com/FrankWan27/rotato-potato">Github</a></p>
+    <p style="text-align: center">View the source code on <a href="https://github.com/FrankWan27/rotato-potato" class="icon brands style1 fa-github">Github</a></p>
     </body> 
 </html>

@@ -6,10 +6,72 @@
     background: white;
 }
 
+a.disable {
+  pointer-events: none;
+  cursor: default;
+}
+
 
 article:hover .static {
     opacity:0
 }
+
+
+.tiles article > .actions {
+    -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    width: 100%;
+    margin: auto;
+    max-height: 0;
+    line-height: 1.5;
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+body:not(.is-touch) .tiles article:hover .actions {
+
+    max-height: 15em;
+    opacity: 1;
+    pointer-events: all;
+}
+
+body.is-touch .tiles article .actions {
+    max-height: 15em;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tiles article > .actions .first {
+    margin-left: auto;
+    padding: 0px;
+}
+
+.tiles article > .actions .second {
+    margin-right: auto;
+}
+
+.tiles article > .actions .center {
+    margin: auto;
+    padding: 0px;
+}
+
+.tiles article > .actions .button {
+    color: white !important;
+    box-shadow:inset 0 0 0 2px white;
+}
+
+.tiles article > .actions .button.primary {
+    box-shadow: inset 0 0 0 2px #585858;
+
+}
+
+
+
 
 /*
 	Phantom by HTML5 UP
@@ -2712,6 +2774,7 @@ input, select, textarea {
 					opacity: 0;
 				}
 
+
 					.tiles article > a .content > :last-child {
 						margin-bottom: 0;
 					}
@@ -2760,6 +2823,7 @@ input, select, textarea {
 				max-height: 15em;
 				opacity: 1;
 			}
+			
 
 		* + .tiles {
 			margin-top: 2em;
@@ -2777,6 +2841,7 @@ input, select, textarea {
 			max-height: 15em;
 			opacity: 1;
 		}
+
 
 		@media screen and (max-width: 1280px) {
 
