@@ -33,18 +33,13 @@ article:hover .static {
     pointer-events: none;
 }
 
-body:not(.is-touch) .tiles article:hover .actions {
+body .tiles article:hover .actions {
 
     max-height: 15em;
     opacity: 1;
     pointer-events: all;
 }
 
-body.is-touch .tiles article .actions {
-    max-height: 15em;
-    opacity: 1;
-    pointer-events: all;
-}
 
 .tiles article > .actions .first {
     margin-left: auto;
@@ -2803,23 +2798,23 @@ input, select, textarea {
 				background-color: #8499e7;
 			}
 
-			body:not(.is-touch) .tiles article:hover > .image {
+			body .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
 			}
 
-				body:not(.is-touch) .tiles article:hover > .image:before {
+				body .tiles article:hover > .image:before {
 					background-color: #333333;
 					opacity: 0.35;
 				}
 
-				body:not(.is-touch) .tiles article:hover > .image:after {
+				body .tiles article:hover > .image:after {
 					opacity: 0;
 				}
 
-			body:not(.is-touch) .tiles article:hover .content {
+			body .tiles article:hover .content {
 				max-height: 15em;
 				opacity: 1;
 			}
@@ -2835,11 +2830,6 @@ input, select, textarea {
 			-ms-transform: scale(0.9);
 			transform: scale(0.9);
 			opacity: 0;
-		}
-
-		body.is-touch .tiles article .content {
-			max-height: 15em;
-			opacity: 1;
 		}
 
 
