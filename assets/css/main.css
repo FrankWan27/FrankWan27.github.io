@@ -11,6 +11,12 @@ a.disable {
   cursor: default;
 }
 
+@media(max-width: 1020px) 
+{
+	#about {
+		float: right;
+	}
+}
 
 article:hover .static {
     opacity:0
